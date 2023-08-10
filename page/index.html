@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas workshop Entercode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        :root{
+            --grey: rgb(183, 183, 183);
+            --darkgrey: rgb(43, 43, 43);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html body{
+            height: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+
+        .header{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .container{
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+
+        .header ul{
+            display: flex;
+            gap: 20px;
+            color: white;
+        }
+
+        .navbar_1{
+            background-color: rgb(43, 43, 43);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .navbar_1 .nav1_icon{
+            height: 60px;
+            width: 60px;
+        }
+
+        .navbar_1 .search input{
+            width: 400px;
+            outline: 0;
+            border: none;
+            padding: 8px;
+            border-radius: 50px;
+            margin-left: 50px;
+        }
+
+        .navbar_1 .search_icon{
+            padding: 10px 15px 10px 14px;
+            background-color: red;
+            color: white;
+            border-radius: 100%;
+            margin-left: -40px;
+        }
+
+        .profile{
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .a_button1{
+            background-color: rgb(79, 79, 79);
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 50px;
+        }
+
+        .a_button2{
+            background-color: rgb(79, 79, 79);
+            color: white;
+            padding-left: 0;
+            padding-right: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 50px;
+        }
+
+        #notif_icon{
+            padding: 12px 15px 12px 14px;
+            background-color: yellow;
+            color: black;
+            border-radius: 100%;
+            margin-right: 5px;
+        }
+
+        .navbar_2{
+            background-color: var(--grey);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .navbar_2 ul{
+            display: flex;
+            gap: 20px;
+        }
+
+        .jumbotron .container{
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            gap: 25px;
+        }
+
+        .categories{
+            border: 0.5px solid var(--darkgrey);
+            font-size: 20px;
+        }
+
+        .categories ul li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .categories ul li:hover{
+            color: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header" style="background-color: black;">
+        <div class="container" style="display: flex;">
+            <ul>
+                <li><i class="bi bi-tools"></i> abc</li>
+                <li><i class="bi bi-stoplights"></i> abc</li>
+            </ul>
+            <ul style="margin-left: auto; margin-right: 0px;">
+                <li><i class="bi bi-car-front-fill"></i> Lorem</li>
+                <li><i class="bi bi-sign-railroad"></i> Lorem</li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="navbar_1">
+        <div class="container" style="display: flex; align-items: center;">
+            <div style="display: flex;">
+                <div>
+                    <img src="..\img\icon.png" alt="icon" class="nav1_icon">
+                </div>
+                <div>
+                    <div style="display: flex; gap: 10px; margin-top: 5px;">
+                        <h3 style="color: white; font-size: 25px; padding-left: 10px;">Lorem</h3>
+                        <h3 style="color: yellow; font-size: 25px;">Ipsum</h3>
+                    </div>
+                    <div style="padding-left: 10px; margin-top: -5px;">
+                        <h6 style="color: white;">Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form>
+                    <div class="search" style="display: flex;">
+                        <input type="text" placeholder="Search">
+                        <div class="search_icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="profile">
+                <div>
+                    <a class="a_button1" href="#" style="margin-right: 10px;"><i class="bi bi-person"></i> 108 M</a>
+                    <a class="a_button2" href="#"><i class="bi bi-bell-fill" id="notif_icon"></i> 99+</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar_2">
+        <div class="container">
+            <ul>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+                <li>lorem</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="categories">
+                <ul>
+                    <li><b>CATEGORIES</b></li>
+                    <hr class="garis">
+                    <li><a href="">lorem satu</a></li>
+                    <li><a href="">lorem dua</a></li>
+                    <li><a href="">lorem tiga</a></li>
+                    <li><a href="">lorem empat</a></li>
+                    <li><a href="">lorem lima</a></li>
+                    <li><a href="">lorem enam</a></li>
+                    <li><a href="">lorem tujuh</a></li>
+                    <li><a href="">lorem delapan</a></li>
+                    <li><a href="">lorem sembilan</a></li>
+                    <li><a href="">lorem sepuluh</a></li>
+                </ul>
+            </div>
+            <div>
+                DEF
+            </div>
+            <div>
+                GHI
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
